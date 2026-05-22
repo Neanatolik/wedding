@@ -50,6 +50,8 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -83,7 +85,7 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<section class="hero">
+<section class="hero"> 
     <section class="navigation">
         <header>
             <div class="header-content">
@@ -93,12 +95,11 @@
                         <ul class="primary-nav">
                             <li><a href="#events">Расписание</a></li>
                             <li><a href="#dresscode">Дресс-код</a></li>
+                            <li><a href="#gifts">Что подарить</a></li>
                             <li><a href="#map">Место проведения</a></li>
-                            <li><a href="#rsvp">RSVP</a></li>
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <li><a href="#rsvp" class="btn-white btn-small">Форма подтверждения</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -108,30 +109,15 @@
             </div>
         </header>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="hero-content text-center">
-                    <img src="img/logo-lg.png" alt="Logo">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
-            <div class="col-sm-4 hidden-xs"></div>
-        </div>
-    </div>
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
 <section id="invitation" class="section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center wp3">
                 <h3>Мы приглашаем вас на нашу свадьбу!</h3>
                 <p>Торжество состоится и мы хотели бы видеть вас среди наших гостей.</p>
-                <div class="share-bar"></div>
             </div>
         </div>
     </div>
@@ -141,11 +127,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="header">Расписание торжества</h3>
+                <h3 class="header text-center">Расписание торжества</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol text-center">
                 <div class="wp3">
                     <p><strong>Регистрация и сбор гостей</strong></p>
                     <h5>Встреча гостей <span class="time">16:00 - 17:00</span></h5>
@@ -156,7 +142,7 @@
                     <p>Выкуп невесты, регистрация брака, первый танец молодожёнов.</p>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol text-center">
                 <div class="wp4">
                     <p><strong>Банкет и развлечения</strong></p>
                     <h5>Праздничный ужин <span class="time">18:00 - 23:00</span></h5>
@@ -171,17 +157,40 @@
     </div>
 </section>
 
+<section id="gifts" class="section-padding">
+    <div class="container">
+        <h3 class= "text-center">Пожелания по подаркам</h3>
+        <div class="row align-center" style="margin-top: 30px;">
+            
+            <!-- Левая колонка -->
+            <div class="col-md-6 col-sm-10 text-center">
+                <img src="img/hero-min.jpg" 
+                    alt="Ресторан" 
+                    style="width: 100%; max-width: 100%; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            </div>
+            
+            <div class="col-md-6 col-sm-10 text-center text-md-left">
+                <p class = "text-center">Знаете, что делает свадьбу идеальной? Не стол, не музыка и даже не погода. А люди, которые смотрят на тебя с любовью и улыбаются. Для нас вы — именно такие люди.
+Мы просто счастливы, что вы будете с нами в этот день. Это больше любых подарков.
+ Если говорить о традициях… Цветы мы очень любим, но, к сожалению, не сможем их забрать с собой . Не хочется, чтобы букеты остались в пустом зале.
+Поэтому, если вы хотите нас порадовать, лучше всего для нас — конверт. Это скромно, удобно и очень помогает на старте.
+Но ещё раз, без всякого «но»: главное — это вы сами. Приезжайте, обнимайтесь, смейтесь — вот что мы запомним навсегда.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="dresscode" class="section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center wp3">
                 <h3 class="header">Дресс-код</h3>
                 <p>Вдохновляйтесь нашей цветовой палитрой для создания идеального образа</p>
             </div>
         </div>
         
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2 wp3">
                 <div style="width:100%; max-width:500px; margin:0 auto;">
                     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:15px;">
                         <div style="text-align:center; cursor:pointer;" onclick="selectColor(0)">
@@ -244,12 +253,40 @@
 </section>
 
 <section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>Где будет проходить торжество?</h3>
-        <p>Мы будем рады видеть вас по адресу:</p>
-        <h4 style="margin-top: 20px;">Ресторан "НАЗВАНИЕ"</h4>
-        <p>г. Москва, ул. Примерная, д. 123</p>
-        <p>Банкетный зал "Торжество"</p>
+    <div class="container">
+        <div class="text-center">
+            <h3>Где будет проходить торжество?</h3>
+        </div>
+        
+        <style>
+            .align-center {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            @media (max-width: 991px) {
+                .align-center {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        </style>
+
+        <div class="row align-center" style="margin-top: 30px;">
+            <!-- Левая колонка -->
+            <div class="col-md-6 col-sm-10 text-center">
+                <img src="img/hero-min.jpg" 
+                    alt="Ресторан" 
+                    style="width: 100%; max-width: 100%; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            </div>
+            
+            <div class="col-md-6 col-sm-10 text-center text-md-left">
+                <p>Мы будем рады видеть вас по адресу:</p>
+                <h4 style="margin-top: 20px;">Ресторан "НАЗВАНИЕ"</h4>
+                <p>г. Москва, ул. Примерная, д. 123</p>
+                <p>Банкетный зал "Торжество"</p>
+            </div>
+        </div>
     </div>
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
@@ -288,12 +325,11 @@
                     ✨ Все данные будут отправлены нам напрямую. Спасибо! ✨
                 </p>
                 
-                <!-- СПОСОБ 1: Открыть форму в новой вкладке (САМЫЙ ПРОСТОЙ) -->
                 <div style="text-align: center; margin: 30px 0;">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKIolgF2W5jnXLF0uyePB2LlZy-pvV8Z1x2yb0jHANwgjW8Q/viewform?usp=sf_link" 
                        target="_blank" 
                        class="btn btn-accent btn-large" 
-                       style="padding: 15px 40px; font-size: 18px;">
+                       style="display: inline-block; max-width: 100%; padding: 14px 28px; font-size: 18px; white-space: normal; word-wrap: break-word; overflow-wrap: break-word; line-height: 1.4; height: auto; box-sizing: border-box;">
                         📝 Открыть форму подтверждения
                     </a>
                     <p style="margin-top: 15px; font-size: 13px; color: #999;">
@@ -326,9 +362,9 @@
 <script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/scripts.min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
 
 <script>
 // Скрипт для работы палитры
