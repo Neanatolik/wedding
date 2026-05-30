@@ -77,6 +77,16 @@
                 height: 850px;
             }
         }
+         #yandex-map {
+        width: 100%;
+        height: 350px;
+        border-radius: 16px;
+        }
+        @media (max-width: 768px) {
+            #yandex-map {
+                height: 280px !important;
+            }
+        }
     </style>
 </head>
 <body id="top">
@@ -281,11 +291,18 @@
             }
         </style>
 
+
         <div class="row align-center" style="margin-top: 30px;">
             <!-- Левая колонка -->
             <div class="col-md-6 col-sm-10 text-center">
-                <div class="yandex-map-container">
-                    <div id="yandex-map" style="width:100%; height:350px; border-radius:16px;"></div>
+                <div style="width:100%; height:350px; border-radius:16px; overflow:hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <iframe 
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab67b09aac557a44f139589235ed571b996a8ecd519af07f9908b6cb1cd24078c&amp;source=constructor" 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0"
+                        style="border-radius:16px;">
+                    </iframe>
                 </div>
             </div>
             
@@ -374,36 +391,6 @@
 <script src="js/scripts.min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
-
-<script src="https://api-maps.yandex.ru/2.1/?apikey=e8f5f048-ba85-4a1d-818e-8c8ededdf149&lang=ru_RU" type="text/javascript"></script>
-<script>
-// Простая карта с меткой по координатам
-ymaps.ready(function() {
-    // Ваши координаты (обновлённые)
-    var coords = [55.122820, 82.835764];
-    
-    // Создаём карту
-    var myMap = new ymaps.Map('yandex-map', {
-        center: coords,
-        zoom: 17,
-        controls: ['zoomControl', 'fullscreenControl']
-    });
-    
-    // Добавляем метку
-    var placemark = new ymaps.Placemark(coords, {
-        hintContent: 'Экопарк-отель Чкаловские Дачи',
-        balloonContent: '<strong>🏨 Экопарк-отель "Чкаловские Дачи"</strong><br>' +
-                        'г. Новосибирск, Дом отдыха Мочище, 4<br>' +
-                        'Шатер "Шампань"<br><br>' +
-                        '🌟 Торжество состоится здесь!'
-    }, {
-        preset: 'islands#redCircleIcon'
-    });
-    
-    myMap.geoObjects.add(placemark);
-    placemark.balloon.open();
-});
-</script>
 
 
 
