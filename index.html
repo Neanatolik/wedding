@@ -1,12 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="ru"> <!--<![endif]-->
+<html class="no-js" lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -77,23 +70,9 @@
                 height: 850px;
             }
         }
-         #yandex-map {
-        width: 100%;
-        height: 350px;
-        border-radius: 16px;
-        }
-        @media (max-width: 768px) {
-            #yandex-map {
-                height: 280px !important;
-            }
-        }
     </style>
 </head>
 <body id="top">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
 
 <section class="hero"> 
     <section class="navigation">
@@ -104,8 +83,8 @@
                     <nav>
                         <ul class="primary-nav">
                             <li><a href="#events">Расписание</a></li>
-                            <li><a href="#dresscode">Дресс-код</a></li>
                             <li><a href="#gifts">Что подарить</a></li>
+                            <li><a href="#dresscode">Дресс-код</a></li>
                             <li><a href="#map">Место проведения</a></li>
                         </ul>
                         <ul class="member-actions">
@@ -202,43 +181,18 @@
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2 wp3">
-                <div style="width:100%; max-width:500px; margin:0 auto;">
-                    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:15px;">
-                        <div style="text-align:center; cursor:pointer;" onclick="selectColor(0)">
-                            <div style="width:65px; height:65px; background:#31473A; border-radius:50%; margin:0 auto; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:2px solid white;"></div>
-                            <div style="font-size:11px; background:#f8fafc; padding:4px 8px; border-radius:30px; margin-top:8px;">Глубокий хвойный</div>
-                        </div>
-                        <div style="text-align:center; cursor:pointer;" onclick="selectColor(1)">
-                            <div style="width:65px; height:65px; background:#618579; border-radius:50%; margin:0 auto; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:2px solid white;"></div>
-                            <div style="font-size:11px; background:#f8fafc; padding:4px 8px; border-radius:30px; margin-top:8px;">Эвкалиптовый</div>
-                        </div>
-                        <div style="text-align:center; cursor:pointer;" onclick="selectColor(2)">
-                            <div style="width:65px; height:65px; background:#B2D8C5; border-radius:50%; margin:0 auto; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:2px solid white;"></div>
-                            <div style="font-size:11px; background:#f8fafc; padding:4px 8px; border-radius:30px; margin-top:8px;">Мятный туман</div>
-                        </div>
-                        <div style="text-align:center; cursor:pointer;" onclick="selectColor(3)">
-                            <div style="width:65px; height:65px; background:#efdad9; border-radius:50%; margin:0 auto; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:2px solid white;"></div>
-                            <div style="font-size:11px; background:#f8fafc; padding:4px 8px; border-radius:30px; margin-top:8px;">Пудровый</div>
-                        </div>
-                        <div style="text-align:center; cursor:pointer;" onclick="selectColor(4)">
-                            <div style="width:65px; height:65px; background:#EADBC6; border-radius:50%; margin:0 auto; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:2px solid white;"></div>
-                            <div style="font-size:11px; background:#f8fafc; padding:4px 8px; border-radius:30px; margin-top:8px;">Кремовый</div>
-                        </div>
-                        <div style="text-align:center; cursor:pointer;" onclick="selectColor(5)">
-                            <div style="width:65px; height:65px; background:#8f664a; border-radius:50%; margin:0 auto; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:2px solid white;"></div>
-                            <div style="font-size:11px; background:#f8fafc; padding:4px 8px; border-radius:30px; margin-top:8px;">Карамель</div>
-                        </div>
-                        <div style="text-align:center; cursor:pointer;" onclick="selectColor(6)">
-                            <div style="width:65px; height:65px; background:#4A3426; border-radius:50%; margin:0 auto; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:2px solid white;"></div>
-                            <div style="font-size:11px; background:#f8fafc; padding:4px 8px; border-radius:30px; margin-top:8px;">Пряный шоколад</div>
-                        </div>
+                <div style="width:100%; max-width:600px; margin:0 auto;">
+                    <!-- Контейнер для цветов с фиксированными отступами -->
+                    <div class="color-palette" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 60px; row-gap: 25px; margin: 0 auto;">
+                        <!-- Цвета будут сгенерированы динамически через JS -->
                     </div>
-                    <div style="background:#f9fafb; border-radius:24px; padding:14px 16px; text-align:center; margin-top:20px; border:1px solid #edf2f7;">
+                    
+                    <div style="background:#f9fafb; border-radius:24px; padding:14px 16px; text-align:center; margin-top:30px; border:1px solid #edf2f7;">
                         <div style="display:flex; align-items:center; justify-content:center; gap:10px; font-weight:700; font-size:16px;">
-                            <div id="selectedBadge" style="width:26px; height:26px; background:#b0c4de; border-radius:50%;"></div>
-                            <span id="selectedName">Небесный лён</span>
+                            <div id="selectedBadge" style="width:26px; height:26px; border-radius:50%;"></div>
+                            <span id="selectedName"></span>
                         </div>
-                        <div id="comment" style="font-size:13px; color:#4b5563; margin-top:10px; font-style:italic;">🌤️ Лёгкий и свежий — идеален для летних луков</div>
+                        <div id="comment" style="font-size:13px; color:#4b5563; margin-top:10px; font-style:italic;"></div>
                     </div>
                 </div>
             </div>
@@ -313,26 +267,18 @@
             </div>
         </div>
     </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
+</section>
+
+<section>
+    <div class="container">
         <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Контактная информация
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Координатор: Имя Фамилия</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+71234567890">+7 (123) 456-78-90</a></p>
-                            <p><i class="fa fa-envelope"></i> <a href="mailto:wedding@example.com">wedding@example.com</a></p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Как добраться?</h5>
-                            <p>Метро "Примерная", далее пешком 5 минут. Парковка охраняемая.</p>
-                        </div>
+            <div class="col-md-12 text-center wp3">
+                <h3>Контактная информация</h3>
+                <div class="pointer-events-auto">
+                    <div class="col-md-6">
+                        <h5>Координатор: Имя Фамилия</h5>
+                        <p><i class="fa fa-mobile"></i> <a href="tel://+71234567890">+7 (123) 456-78-90</a></p>
+                        <p><i class="fa fa-envelope"></i> <a href="mailto:wedding@example.com">wedding@example.com</a></p>
                     </div>
                 </div>
             </div>
@@ -361,11 +307,6 @@
                         Нажмите на кнопку — форма откроется в новом окне
                     </p>
                 </div>
-                
-                <p style="margin-top: 30px; font-size: 13px; color: #aaa;">
-                    🎵 Если у вас возникли проблемы с формой, напишите нам на <strong>wedding@example.com</strong> <br>
-                    Или позвоните по телефону: <strong>+7 (123) 456-78-90</strong>
-                </p>
             </div>
         </div>
     </div>
@@ -394,33 +335,144 @@
 
 
 <script>
-// Скрипт для работы палитры
-(function() {
-    const colors = [
-        { name: "Глубокий хвойный", hex: "#31473A", comment: "🌲 Холодный, глубокий, приглушенный, лаконичный — настоящая глубина без драмы" },
-        { name: "Эвкалиптовый", hex: "#618579", comment: "🍃 Универсальный природный оттенок для повседневной элегантности" },
-        { name: "Мятный туман", hex: "#B2D8C5", comment: "🌫️ Светлый, успокаивающий — идеален для летних луков" },
-        { name: "Пудровый", hex: "#efdad9", comment: "🌸 Нежный и романтичный, отличается свежестью, элегантностью" },
-        { name: "Кремовый", hex: "#EADBC6", comment: "🍦 Обволакивающий, невесомый, естественный — кремовый оттенок, который не спорит, а дополняет." },
-        { name: "Карамель", hex: "#8f664a", comment: "🍮 Теплый, сладковатый — оттенок, который согревает и добавляет уюта любому образу." },
-        { name: "Пряный шоколад", hex: "#4A3426", comment: "🍫 Ароматный, благородный — корица без лишней сладости, только тепло и характер." }
-    ];
+// Единый источник данных для цветовой палитры
+const colors = [
+    { name: "Глубокий хвойный", hex: "#31473A", comment: "🌲 Холодный, глубокий, приглушенный, лаконичный — настоящая глубина без драмы" },
+    { name: "Эвкалиптовый", hex: "#618579", comment: "🍃 Универсальный природный оттенок для повседневной элегантности" },
+    { name: "Мятный туман", hex: "#B2D8C5", comment: "🌫️ Светлый, успокаивающий — идеален для летних луков" },
+    { name: "Пудровый", hex: "#efdad9", comment: "🌸 Нежный и романтичный, отличается свежестью, элегантностью" },
+    { name: "Кремовый", hex: "#EADBC6", comment: "🍦 Обволакивающий, невесомый, естественный — кремовый оттенок, который не спорит, а дополняет." },
+    { name: "Карамель", hex: "#8f664a", comment: "🍮 Теплый, сладковатый — оттенок, который согревает и добавляет уюта любому образу." },
+    { name: "Пряный шоколад", hex: "#4A3426", comment: "🍫 Ароматный, благородный — корица без лишней сладости, только тепло и характер." }
+];
+
+// Глобальная переменная для хранения ссылок на кружочки
+let colorCircleElements = [];
+
+// Функция генерации цветовых кружочков
+function generateColorPalette() {
+    const paletteContainer = document.querySelector('.color-palette');
+    if (!paletteContainer) return;
     
-    window.selectColor = function(idx) {
-        var selectedName = document.getElementById('selectedName');
-        var selectedBadge = document.getElementById('selectedBadge');
-        var commentDiv = document.getElementById('comment');
-        
-        if (selectedName) selectedName.innerText = colors[idx].name;
-        if (selectedBadge) selectedBadge.style.backgroundColor = colors[idx].hex;
-        if (commentDiv) commentDiv.innerHTML = colors[idx].comment;
-        
-        var circles = document.querySelectorAll('[onclick^="selectColor"] > div:first-child');
-        circles.forEach(function(circle, i) {
-            circle.style.boxShadow = i === idx ? '0 0 0 3px white, 0 0 0 5px #3b82f6' : '0 4px 10px rgba(0,0,0,0.1)';
-        });
-    };
-})();
+    // Очищаем контейнер
+    paletteContainer.innerHTML = '';
+    colorCircleElements = [];
+    
+    // Верхняя сетка для первых 3 цветов
+    const topGrid = document.createElement('div');
+    topGrid.style.cssText = `
+        display: grid;
+        grid-template-columns: repeat(3, 80px);
+        justify-content: center;
+        gap: 25px 40px;
+        margin: 0 auto 20px auto;
+    `;
+    
+    // Добавляем первые 3 цвета
+    for (let i = 0; i < 3; i++) {
+        const color = colors[i];
+        const colorItem = createColorItem(color, i);
+        topGrid.appendChild(colorItem);
+    }
+    
+    // Нижняя сетка для остальных 4 цветов
+    const bottomGrid = document.createElement('div');
+    bottomGrid.style.cssText = `
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        justify-content: center;
+        gap: 20px 35px;
+        margin: 0 auto;
+    `;
+    
+    // Добавляем оставшиеся 4 цвета (индексы 3, 4, 5, 6)
+    for (let i = 3; i < colors.length; i++) {
+        const color = colors[i];
+        const colorItem = createColorItem(color, i);
+        bottomGrid.appendChild(colorItem);
+    }
+    
+    paletteContainer.appendChild(topGrid);
+    paletteContainer.appendChild(bottomGrid);
+}
+
+// Функция создания элемента цвета
+function createColorItem(color, index) {
+    const colorItem = document.createElement('div');
+    colorItem.style.cssText = `
+        text-align: center;
+        cursor: pointer;
+        width: 100px;
+    `;
+    
+    colorItem.onclick = () => selectColor(index);
+    
+    const circle = document.createElement('div');
+    circle.className = 'color-circle';
+    circle.setAttribute('data-color-index', index);
+    circle.style.cssText = `
+        width: 65px; 
+        height: 65px; 
+        background: ${color.hex}; 
+        border-radius: 50%; 
+        margin: 0 auto; 
+        border: 2px solid white; 
+        transition: box-shadow 0.2s ease; 
+        cursor: pointer;
+    `;
+    
+    const label = document.createElement('div');
+    label.style.cssText = `
+        font-size: 11px; 
+        background: #f8fafc; 
+        padding: 6px 10px; 
+        border-radius: 30px; 
+        margin-top: 12px;
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.3;
+        max-width: 110px;
+        margin-left: auto;
+        margin-right: auto;
+    `;
+    label.innerText = color.name;
+    
+    colorItem.appendChild(circle);
+    colorItem.appendChild(label);
+    
+    // Сохраняем ссылку на кружочек
+    colorCircleElements.push(circle);
+    
+    return colorItem;
+}
+
+// Функция выбора цвета (обновляет активный кружок и информацию)
+function selectColor(idx) {
+    const selectedName = document.getElementById('selectedName');
+    const selectedBadge = document.getElementById('selectedBadge');
+    const commentDiv = document.getElementById('comment');
+    
+    if (selectedName) selectedName.innerText = colors[idx].name;
+    if (selectedBadge) selectedBadge.style.backgroundColor = colors[idx].hex;
+    if (commentDiv) commentDiv.innerHTML = colors[idx].comment;
+    
+    // Обновляем стили активного кружка
+    colorCircleElements.forEach((circle) => {
+        const colorIndex = parseInt(circle.getAttribute('data-color-index'));
+        if (colorIndex === idx) {
+            circle.style.boxShadow = '0 0 0 3px white, 0 0 0 5px #3b82f6';
+        } else {
+            circle.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+        }
+    });
+}
+
+// Инициализация при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() {
+    generateColorPalette();
+    selectColor(0);
+});
 </script>
 
 </body>
